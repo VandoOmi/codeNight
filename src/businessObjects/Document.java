@@ -1,12 +1,14 @@
 package businessObjects;
 
 import javax.xml.datatype.DatatypeConstants;
+import java.util.ArrayList;
 
 public class Document {
     private int id;
     private String name;
     private String path;
     private String type;
+    private ArrayList<String> tags;
 
     public Document(String name, String path) {
         this.name = name;
@@ -43,5 +45,13 @@ public class Document {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public ArrayList<String> getTags() {
+        return tags;
+    }
+
+    public void setTags(ArrayList<String> tags) {
+        this.tags = tags;
     }
 }
