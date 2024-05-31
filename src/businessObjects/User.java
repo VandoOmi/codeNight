@@ -1,19 +1,33 @@
 package businessObjects;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.sql.Date;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 @Getter
+@AllArgsConstructor
 public class User {
-    int id;
+    private int id;
     @Setter
-    String name;
-    String password;
-    ArrayList<Document> docs;
-    ArrayList<String> tags;
+    private String name;
+    private String password;
+    private ArrayList<Document> docs;
+    private ArrayList<String> tags;
     @Setter
-    Date lastLogin;
+    private LocalDate lastLogin;
+
+    public void updateLastLogin(){
+        lastLogin = LocalDate.now();
+    }
+
+    public void addDoc(Document doc){
+        docs.add(doc);
+    }
+
+    public void addTag(String tag){
+        tags.add(tag);
+    }
 }
+
