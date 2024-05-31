@@ -1,9 +1,13 @@
 1. Datenbank
-
-2. GUI
-    -Benutzer Datenbank
-        ->Name password loginzeit
-    -Datentypen Datenbank
+    - Benutzer Datenbank
+        -> Name password loginzeit
+    - Datentypen Datenbank
         -> file Speicherort tags(mit ";" getrennt)
+2. GUI
 
 3. Backend Logic
+    - Datein verwalten
+        -> Hinzufügen, Entfernen, Bearbeiten usw.
+    - Datein pfade verwalten
+        -> von datenbank zur gui senden
+    -
