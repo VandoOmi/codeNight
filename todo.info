@@ -1,5 +1,9 @@
 1. Datenbank
 
 2. GUI
+    -Benutzer Datenbank
+        ->Name password loginzeit
+    -Datentypen Datenbank
+        -> file Speicherort tags(mit ";" getrennt)
 
 3. Backend Logic
