@@ -9,7 +9,7 @@ import java.util.ArrayList;
 @AllArgsConstructor
 public class Tags {
     private ArrayList<String> tags = new ArrayList<>();
-    public boolean containsTag(){
-
+    public boolean containsTag(String tag){
+        return tags.contains(tag);
     }
 }
