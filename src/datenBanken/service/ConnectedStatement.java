@@ -2,10 +2,7 @@ package datenBanken.service;
 
 import lombok.Getter;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 @Getter
 public class ConnectedStatement {
@@ -48,6 +45,15 @@ public class ConnectedStatement {
             e.printStackTrace();
         }
     }
+    public void setString(int index,String[] value) {
+        try {
+            for (int i = index; i < value.length; i++) {
+                pstm.setString(i, value[i]);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void setInt(int index, int value) {
         try {
@@ -60,6 +66,13 @@ public class ConnectedStatement {
     public void setInt(int value) {
         try {
             pstm.setInt(1, value);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    public void setDate(int index, Date value) {
+        try {
+            pstm.setDate(index, value);
         } catch (SQLException e) {
             e.printStackTrace();
         }
