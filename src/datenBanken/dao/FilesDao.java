@@ -12,7 +12,7 @@ public class FilesDao implements DaoInterace<Document,Integer> {
     }
 
     @Override
-    public void update(Document document, Integer integer) {
+    public void update(Document document) {
 
     }
 

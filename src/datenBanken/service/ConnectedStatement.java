@@ -62,6 +62,13 @@ public class ConnectedStatement {
             e.printStackTrace();
         }
     }
+    public void setString(int index, String value) {
+        try {
+            pstm.setString(index, value);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void setInt(int value) {
         try {
