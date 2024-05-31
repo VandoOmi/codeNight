@@ -7,8 +7,8 @@ import java.util.ArrayList;
 
 public class FilesDao implements DaoInterace<Document,Integer> {
     @Override
-    public Document create(Document document) {
-        return null;
+    public void create(Document document) {
+
     }
 
     @Override
